@@ -1,8 +1,11 @@
-package com.example.movieratings
+package com.example.movieratings.util
 
-import org.apache.commons.csv.{CSVFormat, CSVRecord}
+import org.apache.commons.csv.CSVFormat
+import org.apache.commons.csv.CSVRecord
 
-import java.io.{File, FileReader, FileWriter}
+import java.io.File
+import java.io.FileReader
+import java.io.FileWriter
 import scala.collection.JavaConverters._
 
 /** Helper methods to work with CSV files.
