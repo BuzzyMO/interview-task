@@ -2,4 +2,4 @@ package com.example.movieratings.entity
 
 import java.time.Year
 
-case class Movie(id: Long, year: Year, title: String)
+case class Movie(id: String, year: Year, title: String)
