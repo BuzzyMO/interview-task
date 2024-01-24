@@ -1,5 +1,7 @@
 package com.example.movieratings
 
+import scala.io.StdIn
+
 object ReportGenerator {
 
   def main(args: Array[String]): Unit = {
@@ -7,6 +9,9 @@ object ReportGenerator {
     val reportBuilder = ReportBuilder(mvTitlesPath, trainingSetPath)
 
     reportBuilder.generateFullReport(reportFilePath)
+
+    StdIn.readLine()
+    System.exit(0)
   }
 
   def getFilePaths(args: Array[String]): (String, String, String) = {
